@@ -26,6 +26,7 @@ public class Main {
                     System.out.print("Eklenecek eleman: ");
                     String kelimeEkle = scanner.nextLine();
                     dizi.ekle(kelimeEkle);
+                    System.out.println(kelimeEkle + " başarıyla diziye eklendi.");
                     break;
 
                 case 2:
@@ -45,6 +46,7 @@ public class Main {
                     System.out.print("Silinecek eleman: ");
                     String kelimeSil = scanner.nextLine();
                     dizi.sil(kelimeSil);
+                    System.out.println(kelimeSil + " başarıyla diziden silindi.");
                     break;
 
                 case 4:
@@ -54,10 +56,12 @@ public class Main {
                     System.out.print("Yeni eleman: ");
                     String kelimeYeni = scanner.nextLine();
                     dizi.guncelle(kelimeEski, kelimeYeni);
+                    System.out.println(kelimeEski + " başarıyla " + kelimeYeni + " olarak güncellendi.");
                     break;
 
                 case 5:
                     // Diziyi yazdır
+                    System.out.println("Dizideki Elemanlar:");
                     dizi.yazdir();
                     break;
 
@@ -74,3 +78,5 @@ public class Main {
         scanner.close();
     }
 }
+
+//dizinin arasına eleman ekleme silme ödev
